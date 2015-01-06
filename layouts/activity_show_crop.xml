@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundDashboard"
+    tools:context="eu.omnitracs.add.poc.ShowCropppedPictureActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:contentDescription="cropped and filtered picture">
+        </ImageView>
+    </LinearLayout>
+    <!--
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/margin_button_pictures"
+        android:layout_marginLeft="@dimen/margin_button_pictures_left"
+        android:layout_marginRight="@dimen/margin_button_pictures_right"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_save_pdf"
+        android:textSize="@dimen/font_size_xlarge" ></Button>
+    -->
+
+    <TableLayout
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right"
+        
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/newPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/button_new_picture"
+                android:textSize="@dimen/font_size_medium" />
+        </TableRow>
+
+        <TableRow
+            
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/newCropButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/button_new_crop"
+                android:textSize="@dimen/font_size_medium" />
+        </TableRow>
+
+        <TableRow
+            
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/sendMailButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/button_send_as_mail"
+                android:textSize="@dimen/font_size_medium" />
+        </TableRow>
+        
+        <TableRow
+            
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/sendSharedMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/button_save_shared_media"
+                android:textSize="@dimen/font_size_medium" />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>
