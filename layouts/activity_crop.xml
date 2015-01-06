@@ -7,7 +7,7 @@
     tools:context="eu.omnitracs.add.poc.cameraScanner.CropActivity"
     tools:ignore="MergeRootFrame" >
 
-    <eu.omnitracs.add.poc.cameraScanner.CropView
+    <XXX.CropView
         android:id="@+id/image_preview"
         
         android:layout_width="700dp"
